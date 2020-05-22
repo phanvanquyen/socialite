@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Socialite;
+namespace Phanvanquyen\Socialite;
 
 use Illuminate\Support\ServiceProvider;
-use Laravel\Socialite\Contracts\Factory;
+use Phanvanquyen\Socialite\Contracts\Factory;
 
 class SocialiteServiceProvider extends ServiceProvider
 {

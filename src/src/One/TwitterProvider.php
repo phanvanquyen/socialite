@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Socialite\One;
+namespace Phanvanquyen\Socialite\One;
 
 use InvalidArgumentException;
 

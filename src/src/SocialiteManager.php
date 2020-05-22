@@ -1,18 +1,18 @@
 <?php
 
-namespace Laravel\Socialite;
+namespace Phanvanquyen\Socialite;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Manager;
 use Illuminate\Support\Str;
 use InvalidArgumentException;
-use Laravel\Socialite\One\TwitterProvider;
-use Laravel\Socialite\Two\BitbucketProvider;
-use Laravel\Socialite\Two\FacebookProvider;
-use Laravel\Socialite\Two\GithubProvider;
-use Laravel\Socialite\Two\GitlabProvider;
-use Laravel\Socialite\Two\GoogleProvider;
-use Laravel\Socialite\Two\LinkedInProvider;
+use Phanvanquyen\Socialite\One\TwitterProvider;
+use Phanvanquyen\Socialite\Two\BitbucketProvider;
+use Phanvanquyen\Socialite\Two\FacebookProvider;
+use Phanvanquyen\Socialite\Two\GithubProvider;
+use Phanvanquyen\Socialite\Two\GitlabProvider;
+use Phanvanquyen\Socialite\Two\GoogleProvider;
+use Phanvanquyen\Socialite\Two\LinkedInProvider;
 use League\OAuth1\Client\Server\Twitter as TwitterServer;
 
 class SocialiteManager extends Manager implements Contracts\Factory
@@ -31,7 +31,7 @@ class SocialiteManager extends Manager implements Contracts\Factory
     /**
      * Create an instance of the specified driver.
      *
-     * @return \Laravel\Socialite\Two\AbstractProvider
+     * @return \Phanvanquyen\Socialite\Two\AbstractProvider
      */
     protected function createGithubDriver()
     {
@@ -45,7 +45,7 @@ class SocialiteManager extends Manager implements Contracts\Factory
     /**
      * Create an instance of the specified driver.
      *
-     * @return \Laravel\Socialite\Two\AbstractProvider
+     * @return \Phanvanquyen\Socialite\Two\AbstractProvider
      */
     protected function createFacebookDriver()
     {
@@ -59,7 +59,7 @@ class SocialiteManager extends Manager implements Contracts\Factory
     /**
      * Create an instance of the specified driver.
      *
-     * @return \Laravel\Socialite\Two\AbstractProvider
+     * @return \Phanvanquyen\Socialite\Two\AbstractProvider
      */
     protected function createGoogleDriver()
     {
@@ -73,7 +73,7 @@ class SocialiteManager extends Manager implements Contracts\Factory
     /**
      * Create an instance of the specified driver.
      *
-     * @return \Laravel\Socialite\Two\AbstractProvider
+     * @return \Phanvanquyen\Socialite\Two\AbstractProvider
      */
     protected function createLinkedinDriver()
     {
@@ -87,7 +87,7 @@ class SocialiteManager extends Manager implements Contracts\Factory
     /**
      * Create an instance of the specified driver.
      *
-     * @return \Laravel\Socialite\Two\AbstractProvider
+     * @return \Phanvanquyen\Socialite\Two\AbstractProvider
      */
     protected function createBitbucketDriver()
     {
@@ -101,7 +101,7 @@ class SocialiteManager extends Manager implements Contracts\Factory
     /**
      * Create an instance of the specified driver.
      *
-     * @return \Laravel\Socialite\Two\AbstractProvider
+     * @return \Phanvanquyen\Socialite\Two\AbstractProvider
      */
     protected function createGitlabDriver()
     {
@@ -117,7 +117,7 @@ class SocialiteManager extends Manager implements Contracts\Factory
      *
      * @param  string  $provider
      * @param  array  $config
-     * @return \Laravel\Socialite\Two\AbstractProvider
+     * @return \Phanvanquyen\Socialite\Two\AbstractProvider
      */
     public function buildProvider($provider, $config)
     {
@@ -131,7 +131,7 @@ class SocialiteManager extends Manager implements Contracts\Factory
     /**
      * Create an instance of the specified driver.
      *
-     * @return \Laravel\Socialite\One\AbstractProvider
+     * @return \Phanvanquyen\Socialite\One\AbstractProvider
      */
     protected function createTwitterDriver()
     {

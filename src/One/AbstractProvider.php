@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Socialite\One;
+namespace Phanvanquyen\Socialite\One;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use InvalidArgumentException;
-use Laravel\Socialite\Contracts\Provider as ProviderContract;
+use Phanvanquyen\Socialite\Contracts\Provider as ProviderContract;
 use League\OAuth1\Client\Credentials\TokenCredentials;
 use League\OAuth1\Client\Server\Server;
 
@@ -62,7 +62,7 @@ abstract class AbstractProvider implements ProviderContract
     /**
      * Get the User instance for the authenticated user.
      *
-     * @return \Laravel\Socialite\One\User
+     * @return \Phanvanquyen\Socialite\One\User
      *
      * @throws \InvalidArgumentException
      */
@@ -95,7 +95,7 @@ abstract class AbstractProvider implements ProviderContract
      *
      * @param  string  $token
      * @param  string  $secret
-     * @return \Laravel\Socialite\One\User
+     * @return \Phanvanquyen\Socialite\One\User
      */
     public function userFromTokenAndSecret($token, $secret)
     {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Socialite\Facades;
+namespace Phanvanquyen\Socialite\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use Laravel\Socialite\Contracts\Factory;
+use Phanvanquyen\Socialite\Contracts\Factory;
 
 /**
- * @method static \Laravel\Socialite\Contracts\Provider driver(string $driver = null)
- * @see \Laravel\Socialite\SocialiteManager
+ * @method static \Phanvanquyen\Socialite\Contracts\Provider driver(string $driver = null)
+ * @see \Phanvanquyen\Socialite\SocialiteManager
  */
 class Socialite extends Facade
 {
